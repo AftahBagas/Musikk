@@ -5,21 +5,21 @@ const composer = new Composer();
 
 composer.command("start", async (ctx) => {
   await ctx.reply(
-    `<b>👋🏻 Hi ${escape(ctx.from.first_name)}!</b>
+    `<b>halo ${escape(ctx.from.first_name)}!</b>
 
-I am Calls Music bot, I let you play music in group calls.
+Saya adalah Alpha Bot, saya mengizinkan Anda memutar musik dalam voice chat grup.
 
-The commands I currently support are:
+Perintah yang saat ini saya dukung adalah:
 
-/play - play the replied audio file or YouTube video
-/pause - pause the audio stream
-/resume - resume the audio stream
-/skip - skip the current audio stream
-/stop - clear the queue and remove the userbot from the call`,
+/play - putar file audio yang dijawab atau video YouTube
+/pause - jeda streaming audio
+/resume - lanjutkan streaming audio
+/skip - lewati streaming audio saat ini
+/stop - bersihkan antrian dan hapus bot pengguna dari panggilan`,
     {
       reply_markup: new InlineKeyboard()
-        .url("🔈 Channel", "https://t.me/callsmusic")
-        .url("Group 💬", "https://t.me/callsmusicchat"),
+        .url("👤 Pemilik", "https://t.me/kanjengingsun")
+        .url("Group 🗣️", "https://t.me/musikalpha"),
     }
   );
 });
