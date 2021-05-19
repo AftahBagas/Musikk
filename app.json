@@ -1,8 +1,8 @@
 {
-  "name": "Calls Music 2",
-  "description": "Telegram bot + userbot for streaming audio in group calls.",
+  "name": "Musikk",
+  "description": "bot musik Telegram js.",
   "keywords": ["telegram", "python"],
-  "repository": "https://github.com/callsmusic/callsmusic2",
+  "repository": "https://github.com/AftahBagas/musikk",
   "stack": "container",
   "env": {
     "STRING_SESSION": {
@@ -11,6 +11,11 @@
     },
     "BOT_TOKEN": {
       "description": "A bot token from @BotFather.",
+      "required": true
+    },
+    "YOUTUBE_API_KEY": {
+      "description": "YouTube Data API Key for .yt command. Get from https://console.cloud.google.com",
+      "value": "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg",
       "required": true
     },
     "API_ID": {
